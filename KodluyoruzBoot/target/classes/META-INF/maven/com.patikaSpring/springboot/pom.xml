@@ -73,7 +73,8 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
 		</dependency>
-			
+		
+		<!-- Spring Security -->	
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-security</artifactId>
@@ -88,6 +89,13 @@
 <!--			<groupId>org.thymeleaf.extras</groupId>-->
 <!--			<artifactId>thymeleaf-extras-springsecurity6</artifactId>-->
 <!--		</dependency>-->
+
+		<!-- JDBC -->
+		<!-- https://mvnrepository.com/artifact/org.springframework.boot/spring-boot-starter-jdbc -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-jdbc</artifactId>            
+        </dependency>
 
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
