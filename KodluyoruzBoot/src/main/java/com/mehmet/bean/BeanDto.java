@@ -1,5 +1,7 @@
 package com.mehmet.bean;
 
+import org.springframework.security.access.event.PublicInvocationEvent;
+
 //import lombok.AllArgsConstructor;
 //import lombok.Builder;
 //import lombok.Data;
@@ -20,6 +22,16 @@ public class BeanDto {
 	private String beanName;
 	private String beanData;
 	
-	
+	// başlangıç methodu
+	private void initialBeanMethod() {
+		log.info("Bean başlamdan önce ben varım");
+		System.out.println("Bean başlamdan önce çalışacak method");
+
+	}
+	// bitiş methodu
+	public void destroyBeanMethod() {
+		log.info("Bean sonlandırıldıktan sonra ben varım");
+		System.out.println("Bean sonladırıldıktan sonra çalışacak method");
+	}
 
 }
